@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy · Channel Ops</title>
+<meta name="description" content="What Channel Ops does with YouTube data.">
+<style>
+:root {
+  --bg: #faf9f6;
+  --fg: #1c1b19;
+  --muted: #5d5b55;
+  --rule: #e4e1d8;
+  --link: #1d5bb8;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141413;
+    --fg: #ecebe5;
+    --muted: #a3a19a;
+    --rule: #34332f;
+    --link: #8fb8f6;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  padding: 0 1rem;
+}
+main, footer { max-width: 36rem; margin: 0 auto; }
+main { padding-top: 3rem; padding-bottom: 2rem; }
+.site { margin: 0 0 2rem; font-size: 0.95rem; font-weight: 600; }
+.site a { color: var(--fg); text-decoration: none; }
+h1 { font-size: 2rem; line-height: 1.15; letter-spacing: -0.015em; margin: 0 0 0.4rem; }
+.updated { color: var(--muted); font-size: 0.95rem; margin: 0 0 2rem; }
+h2 { font-size: 1.15rem; line-height: 1.3; margin: 2.25rem 0 0.5rem; }
+p { margin: 0 0 1rem; }
+ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+li { margin: 0 0 0.5rem; }
+a { color: var(--link); text-underline-offset: 0.15em; overflow-wrap: anywhere; }
+footer {
+  padding-top: 1.25rem;
+  padding-bottom: 3rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+footer a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <p class="site"><a href="./">Channel Ops</a></p>
+  <h1>Privacy policy</h1>
+  <p class="updated">Last updated 7 November 2026</p>
+
+  <p>Channel Ops is a private tool. Only its owner uses it, and only on the owner's own YouTube channels. This page explains what it does with YouTube data.</p>
+
+  <h2>YouTube API Services</h2>
+  <p>Channel Ops uses YouTube API Services: the YouTube Data API and the YouTube Analytics API. Google's handling of data is covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Using Channel Ops means agreeing to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</p>
+
+  <h2>What it reads</h2>
+  <p>Details of the owner's channels and videos: titles, descriptions, tags, privacy and schedule settings, captions and playlists. From YouTube Analytics it reads view counts and where the views came from, such as the Shorts feed. These reports are totals and don't identify individual viewers.</p>
+
+  <h2>What it changes</h2>
+  <p>On the owner's own channels only, it can upload a video, add captions, add a video to a playlist or remove it from one, and set a video to private. It has no way to delete videos.</p>
+
+  <h2>What it keeps, and where</h2>
+  <ul>
+    <li>The permission Google issues for the owner's channels (an OAuth refresh token) is kept in the owner's private Claude Code environment settings, never in a file or a repository.</li>
+    <li>A short log of video IDs, view counts, dates and actions taken is kept in the owner's private GitHub repository.</li>
+    <li>The daily check runs in the owner's own Claude Code cloud workspace (Anthropic), which handles this data only to carry out the check.</li>
+  </ul>
+  <p>Nothing is sold, used for advertising, or shared with anyone else. Channel Ops stores nothing on your device, and this website sets no cookies. The site is hosted on GitHub Pages, so GitHub may record visits as described in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+
+  <h2>Removing access</h2>
+  <p>Access can be removed at any time on the Google Account permissions page, <a href="https://security.google.com/settings/security/permissions">security.google.com/settings/security/permissions</a>. Channel Ops then stops working until access is granted again.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy can be left as an issue in <a href="https://github.com/ctbay1/channel-ops-site/issues">this site's GitHub repository</a>.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the date at the top changes with it.</p>
+</main>
+<footer>
+  <a href="./">Home</a>
+</footer>
+</body>
+</html>

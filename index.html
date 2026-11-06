@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Channel Ops</title>
+<meta name="description" content="Channel Ops is a small private tool its owner uses to look after their own YouTube channels.">
+<style>
+:root {
+  --bg: #faf9f6;
+  --fg: #1c1b19;
+  --muted: #5d5b55;
+  --rule: #e4e1d8;
+  --link: #1d5bb8;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141413;
+    --fg: #ecebe5;
+    --muted: #a3a19a;
+    --rule: #34332f;
+    --link: #8fb8f6;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  padding: 0 1rem;
+}
+main, footer { max-width: 36rem; margin: 0 auto; }
+main { padding-top: 4rem; padding-bottom: 2rem; }
+h1 { font-size: 2rem; line-height: 1.15; letter-spacing: -0.015em; margin: 0 0 1.25rem; }
+p { margin: 0 0 1rem; }
+a { color: var(--link); text-underline-offset: 0.15em; }
+footer {
+  padding-top: 1.25rem;
+  padding-bottom: 3rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+footer a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Channel Ops</h1>
+  <p>Channel Ops is a small private tool its owner uses to look after their own YouTube channels.</p>
+  <p>Once a day it checks how each new Short is doing. If YouTube never showed one in the Shorts feed, it uploads the same video again on the same channel and sets the first copy to private. It never deletes videos.</p>
+  <p>It isn't offered to anyone else, and there is nothing to sign up for.</p>
+  <p>Channel Ops uses YouTube API Services. Using it means agreeing to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</p>
+</main>
+<footer>
+  <a href="privacy.html">Privacy policy</a>
+</footer>
+</body>
+</html>
